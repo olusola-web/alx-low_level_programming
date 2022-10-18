@@ -1,20 +1,21 @@
-#include "prototype.h"
+#include "main.h"
 
 /**
- * main - prints _putchar, followed by a new line
- * Return: Always 0 (Success)
+ * main - program that prints Holberton.
+ *
+ * Return: int
  */
+
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
+	int i = 0;
+	char strng_ptchr[8] = "_putchar";
 
+	while (i < 8)
+	{
+		_putchar(strng_ptchr[i]);
+		i++;
+	}
+	_putchar('\n');
 	return (0);
 }
