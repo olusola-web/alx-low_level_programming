@@ -1,20 +1,15 @@
-#include "prototype.h"
+#include "main.h"
 
 /**
  * print_alphabet - prints the alphabet, in lowercase, by a new line
  */
 void print_alphabet(void)
 {
-	char ch;
+	char c;
 
-	ch = 'a';
-
-
-	while (ch <= 'z')
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		_putchar(ch);
-		ch++;
+		_putchar(c);
 	}
-
 	_putchar('\n');
 }
